@@ -47,7 +47,7 @@ def post() -> rx.Component:
 
 app = rx.App(
     theme=rx.theme(appearance="light"),
-    stylesheets=["/animations.css"],
+    stylesheets=[],
     head_components=[
         rx.el.link(rel="preconnect", href="https://fonts.googleapis.com"),
         rx.el.link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin=""),
