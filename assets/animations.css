@@ -11,10 +11,13 @@
 
 @keyframes move {
   0% {
-    transform: translate3d(0, 0, 1px) rotate(0deg);
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(100px) translateY(-50px) rotate(180deg);
   }
   100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: translateX(0) translateY(0) rotate(360deg);
   }
 }
 
@@ -42,6 +45,7 @@
   left: 70%;
   animation-duration: 45s;
   animation-delay: -20s;
+  transform: scale(1.2);
 }
 
 .circle.-three {
@@ -51,4 +55,5 @@
   left: 10%;
   animation-duration: 55s;
   animation-delay: -5s;
+  transform: scale(0.8);
 }
